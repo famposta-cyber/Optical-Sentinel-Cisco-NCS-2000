@@ -1,4 +1,4 @@
-# 🛰️ Optical-Sentinel: Automated Health-Check & Observability
+# Optical-Sentinel: Automated Health-Check & Observability
 
 > **Solução de Automação para Monitoramento Preventivo em Redes Ópticas DWDM (Cisco NCS 2000).**
 
@@ -6,7 +6,7 @@ Este projeto moderniza a gestão de infraestruturas críticas de telecomunicaç�
 
 ---
 
-## 🎯 Valor de Negócio (The "Sentinel" Effect)
+## Valor de Negócio (The "Sentinel" Effect)
 
 Em redes de alta capacidade (Core/Transporte), uma queda de fibra pode impactar milhões de usuários ou operações industriais críticas.
 
@@ -16,7 +16,7 @@ Em redes de alta capacidade (Core/Transporte), uma queda de fibra pode impactar 
 
 ---
 
-## 🏗️ Arquitetura da Solução
+## Arquitetura da Solução
 
 O pipeline foi desenhado seguindo princípios de **DevNet** e **SecDevOps**:
 
@@ -29,7 +29,7 @@ O pipeline foi desenhado seguindo princípios de **DevNet** e **SecDevOps**:
 
 ---
 
-## 🛠️ Stack Tecnológica
+## Stack Tecnológica
 
 * **Linguagem:** Python 3.12+ (Regex, JSON, `psycopg2`, `python-dotenv`)
 * **Infraestrutura:** Docker & Docker Compose
@@ -39,7 +39,7 @@ O pipeline foi desenhado seguindo princípios de **DevNet** e **SecDevOps**:
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Preparação do Ambiente
 Clone o repositório e garanta que o Docker esteja rodando:
