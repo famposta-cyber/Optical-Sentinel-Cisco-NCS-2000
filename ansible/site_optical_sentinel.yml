@@ -1,0 +1,25 @@
+---
+- name: "Optical-Sentinel: Pipeline de Telemetria Óptica-Cisco"
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    project_path: "{{ playbook_dir }}/.."
+    python_exec: "python" # Ou python3, dependendo do seu ambiente
+
+  tasks:
+    - name: 01 | Garantir que as dependências do Python estão presentes
+      ansible.builtin.pip:
+        name: psycopg2-binary
+        state: present
+
+    - name: 02 | Executar o Pipeline de Telemetria (Parser + DB)
+      ansible.builtin.command:
+        cmd: "{{ python_exec }} {{ project_path }}/parser.py"
+      register: pipeline_output
+
+    - name: 03 | Validar Resultado da Execução
+      ansible.builtin.debug:
+        msg: "Pipeline finalizado com sucesso! Detalhes: {{ pipeline_output.stdout }}"
+      when: pipeline_output.rc == 0

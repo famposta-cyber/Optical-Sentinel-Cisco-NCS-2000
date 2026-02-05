@@ -1,0 +1,6 @@
+/* Resposta do comando: RTRV-PM-OCH::ALL:100; */
+   "LINE-1-RX,OPWR,-12.4,dBm,PRC"
+   "LINE-1-TX,OPWR,3.1,dBm,PRC"
+   "LINE-2-RX,OPWR,-15.8,dBm,PRC"
+   "LINE-2-TX,OPWR,2.8,dBm,PRC"
+   "LINE-3-RX,OPWR,-40.0,dBm,LMT"  <-- Simulando uma falha (sinal baixo)

@@ -1,0 +1,9 @@
+# Credenciais
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+postgres_data/
