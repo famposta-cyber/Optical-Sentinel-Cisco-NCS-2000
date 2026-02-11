@@ -1,50 +1,24 @@
-﻿![CI Status](SUA_URL_AQUI/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/SEU_USUARIO_AQUI/Optical-Sentinel/actions/workflows/ci.yml/badge.svg)
 
 # Optical-Sentinel: Automated Health-Check & Observability
 
-> **SoluÃ§Ã£o de AutomaÃ§Ã£o para Monitoramento Preventivo em Redes Ã“pticas DWDM (Cisco NCS 2000).**
+> **Enterprise-grade Automation Solution for Preventive Monitoring in High-Capacity DWDM Optical Networks (Cisco NCS 2000).**
 
-Este projeto moderniza a gestÃ£o de infraestruturas crÃ­ticas de telecomunicaÃ§Ãµes. Ele substitui processos manuais de coleta de dados via protocolos legados por um pipeline de dados automatizado, entregando observabilidade em tempo real e detecÃ§Ã£o proativa de falhas fÃ­sicas.
+[🇧🇷 Clique aqui para a versão em Português](README.pt-br.md)
 
----
-
-## Valor de NegÃ³cio (The "Sentinel" Effect)
-
-Em redes de alta capacidade (Core/Transporte), uma queda de fibra pode impactar milhÃµes de usuÃ¡rios ou operaÃ§Ãµes industriais crÃ­ticas.
-
-* **EficiÃªncia:** ReduÃ§Ã£o do tempo de inspeÃ§Ã£o de saÃºde da rede de horas para segundos.
-* **Proatividade:** DetecÃ§Ã£o de degradaÃ§Ã£o de sinal (dBm) antes que ocorra a interrupÃ§Ã£o do serviÃ§o (SLA).
-* **Conformidade:** Auditoria automatizada de inventÃ¡rio fÃ­sico para evitar erros em bases de ativos (CMDB).
+This project modernizes the management of critical telecommunications infrastructure. It replaces manual data collection processes via legacy protocols with an automated data pipeline, delivering real-time observability and proactive detection of physical network failures.
 
 ---
 
-## Arquitetura da SoluÃ§Ã£o
-
-O pipeline foi desenhado seguindo princÃ­pios de **DevNet** e **SecDevOps**:
-
-1.  **Data Source (Mocking):** SimulaÃ§Ã£o de logs reais do Cisco NCS 2000 via protocolo **TL1 (Transaction Language 1)**.
-2.  **Processing Layer (Python):** Motor de parsing utilizando **Regex Nomeada** para transformar dados nÃ£o estruturados em objetos JSON.
-3.  **Storage (PostgreSQL):** PersistÃªncia em banco de dados relacional para anÃ¡lise histÃ³rica e tendÃªncias.
-4.  **Security (SecDevOps):** GestÃ£o de segredos e credenciais via variÃ¡veis de ambiente (`.env`).
-5.  **Intelligence:** LÃ³gica de *Thresholding* para geraÃ§Ã£o de alertas crÃ­ticos no console.
-6.  **Observability (Metabase):** Dashboard dinÃ¢mico para visualizaÃ§Ã£o tÃ©cnica e executiva.
+## 🎯 Business Value
+* **Efficiency:** Reduces network health inspection time from hours to seconds.
+* **Proactivity:** Detects signal degradation (dBm) before a service interruption (SLA breach) occurs.
+* **Compliance:** Automated physical inventory auditing to prevent errors in asset databases (CMDB).
 
 ---
 
-## Stack TecnolÃ³gica
-
-* **Linguagem:** Python 3.12+ (Regex, JSON, `psycopg2`, `python-dotenv`)
-* **Infraestrutura:** Docker & Docker Compose
-* **Banco de Dados:** PostgreSQL 15-Alpine
-* **VisualizaÃ§Ã£o:** Metabase BI
-* **AutomaÃ§Ã£o:** Ansible (OrquestraÃ§Ã£o de Workflow)
-
----
-
-## Como Executar
-
-### 1. PreparaÃ§Ã£o do Ambiente
-Clone o repositÃ³rio e garanta que o Docker esteja rodando:
-```bash
-docker-compose up -d
-
+## 🏗️ Solution Architecture
+1. **Data Source:** Simulation of real Cisco NCS 2000 logs via TL1 protocol.
+2. **Processing Layer:** Python engine using Named Regex for data normalization.
+3. **Storage:** PostgreSQL persistence for historical analysis.
+4. **Observability:** Dynamic Metabase dashboards.
