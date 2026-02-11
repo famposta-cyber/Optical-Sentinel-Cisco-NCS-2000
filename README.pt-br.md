@@ -1,4 +1,4 @@
-![CI Status](https://github.com/SEU_USUARIO_AQUI/Optical-Sentinel/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/famposta-cyber/Optical-Sentinel-Cisco-NCS-2000/actions/workflows/ci.yml/badge.svg)
 
 # Optical-Sentinel: Automated Health-Check & Observability
 
