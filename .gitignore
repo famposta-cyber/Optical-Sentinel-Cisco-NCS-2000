@@ -1,9 +1,5 @@
-# Credenciais
-.env
-
-# Python
+﻿.env
 __pycache__/
 *.pyc
-
-# Docker
 postgres_data/
+.pytest_cache/
